@@ -1,105 +1,270 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset='utf-8'>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Launch It</title>
+	<meta name="description" content="Your easy-to-build HTML 5 launch page">
+	<meta name="author" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+				
+		/* ==== Scroll down to find where to put your styles :) ==== */
+		
+		/*  HTML5 ✰ Boilerplate  */
+		
+		html, body, div, span, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+		small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, figcaption, figure,
+		footer, header, hgroup, menu, nav, section, summary,
+		time, mark, audio, video {
+		  margin: 0;
+		  padding: 0;
+		  border: 0;
+		  font-size: 100%;
+		  font: inherit;
+		  vertical-align: baseline;
+		}
+		
+		article, aside, details, figcaption, figure,
+		footer, header, hgroup, menu, nav, section {
+		  display: block;
+		}
+		
+		blockquote, q { quotes: none; }
+		blockquote:before, blockquote:after,
+		q:before, q:after { content: ''; content: none; }
+		ins { background-color: #ff9; color: #000; text-decoration: none; }
+		mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+		del { text-decoration: line-through; }
+		abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+		table { border-collapse: collapse; border-spacing: 0; }
+		hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+		input, select { vertical-align: middle; }
+		
+		body { font:13px/1.231 sans-serif; *font-size:small; } 
+		select, input, textarea, button { font:99% sans-serif; }
+		pre, code, kbd, samp { font-family: monospace, sans-serif; }
+		
+		html { overflow-y: scroll; }
+		a:hover, a:active { outline: none; }
+		ul, ol { margin-left: 2em; }
+		ol { list-style-type: decimal; }
+		nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+		small { font-size: 85%; }
+		strong, th { font-weight: bold; }
+		td { vertical-align: top; }
+		
+		sub, sup { font-size: 75%; line-height: 0; position: relative; }
+		sup { top: -0.5em; }
+		sub { bottom: -0.25em; }
+		
+		pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+		textarea { overflow: auto; }
+		.ie6 legend, .ie7 legend { margin-left: -7px; } 
+		input[type="radio"] { vertical-align: text-bottom; }
+		input[type="checkbox"] { vertical-align: bottom; }
+		.ie7 input[type="checkbox"] { vertical-align: baseline; }
+		.ie6 input { vertical-align: text-bottom; }
+		label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+		button, input, select, textarea { margin: 0; }
+		input:valid, textarea:valid   {  }
+		input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+		.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+		
+		::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+		::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+		a:link { -webkit-tap-highlight-color: #FF5E99; }
+		
+		button {  width: auto; overflow: visible; }
+		.ie7 img { -ms-interpolation-mode: bicubic; }
+		
+		body, select, input, textarea {  color: #444; }
+		h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+		a, a:active, a:visited { color: #607890; }
+		a:hover { color: #036; }
+		
+		/*
+			// ========================================== \\
+		   ||                                              ||
+		   ||               Your styles !                  ||
+		   ||                                              ||
+			\\ ========================================== //
+		*/
+		
+		
+		body {background-position: 50% 0; background-repeat: no-repeat; background-color: black; color: #eee}
+			
+			#rapper {padding: 30px 0; width: 480px; margin: 0 auto; }
+				
+				#inner {border: 4px solid #333; padding: 15px; background: #111; /* -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -khtml-opacity: 0.8; opacity: .8;  */-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 2px 2px 4px #222;  -moz-box-shadow: 2px 2px 3px #222; box-shadow: 2px 2px 3px #222;}
+		
+					#inner h1 {font-size: 2em;}
+					#inner .description {}
+					
+					#click-it {clear: both; padding: 10px 0}
+						#form-open {display: block; padding: 10px 0; margin: 0 auto 10px; width: 200px; color: white; text-align: center; overflow: hidden; background: #25BA03; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-weight: bold; font-size: 1.3em; text-decoration: none;}
+						
+						#launch-form {display: none; padding: 16px; background: #222 }
+							#email-field {display: block; padding: 8px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; width: 400px; border: none; margin: 0 0 4px;}
+							#launch-form span, #launch-form label {display: block; margin: 0 0 4px; font-weight: bold }
+							#form-submit {padding: 10px 0; margin: 0 auto; width: 200px; color: white; text-align: center; overflow: hidden; background: #25BA03; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-weight: bold; font-size: 1.3em; border: none; float: right}
+		
+		
+		.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+		.hidden { display: none; visibility: hidden; }
+		.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+		.visuallyhidden.focusable:active,
+		.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+		.invisible { visibility: hidden; }
+		.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+		.clearfix:after { clear: both; }
+		.clearfix { zoom: 1; }
+		
+		
+		@media all and (orientation:portrait) {
+		
+		}
+		
+		@media all and (orientation:landscape) {
+		
+		}
+		
+		@media screen and (max-device-width: 480px) {
+		
+		  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+		}
+		
+		
+		@media print {
+		  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+		  -ms-filter: none !important; } 
+		  a, a:visited { color: #444 !important; text-decoration: underline; }
+		  a[href]:after { content: " (" attr(href) ")"; }
+		  abbr[title]:after { content: " (" attr(title) ")"; }
+		  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+		  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+		  thead { display: table-header-group; }
+		  tr, img { page-break-inside: avoid; }
+		  @page { margin: 0.5cm; }
+		  p, h2, h3 { orphans: 3; widows: 3; }
+		  h2, h3{ page-break-after: avoid; }
+		}
+	</style>
 
-  <title>LeanStartup.Me</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #ffffff;
-      font-family: 'Ubuntu', sans-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 960px;
-    }
-    h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #000000; }
-    h3 { text-align: center; color: #000000; }
-    a { color: #000000; }
-    .description { font-size: 1.2em; margin: 0 auto: margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-  <a href="http://github.com/e30chris/LeanStartupMe"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <h1>
-		<a href="http://github.com/e30chris/LeanStartupMe">LeanStartupMe</a>
-      	<span class="small">by <a href="http://github.com/e30chris">e30chris</a></span>
-	</h1>
-
-    <div class="description">
-		<img src="https://s3.amazonaws.com/spudbudmediabucket/63hop.png" alt="Lean Startup Pic">
-       	<video width="720" height="551" poster="https://s3.amazonaws.com/spudbudmediabucket/63hop.png" controls>
-		  <source src="https://s3.amazonaws.com/spudbudmediabucket/OnlyIfYaWantIt.webm" type='video/webm; codecs="vp8, vorbis"'>
-		</video>	
-		<h2>a simple launch page to see if anyone wants your dumb idea</h2>
+	
+    <div id="rapper">
+		<div id="inner">
+        	<h1>Less is more title!</h1>
+            <p id="description">I don't like lorem ipsum anymore so I'm going to just type something in here. This is the description and we're talking, like, maybe 3 sentences, if even. Hey, you've got a video below, why not use that and save vertical space?</p>
+            <div id="click-it">
+            	<a href="#open" id="form-open">Get Started &raquo;</a>
+                <form id="launch-form" action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFo0TDV1b3JxZTFzU05UWGhxQ1dGTlE6MQ" enctype="multipart/form-data" method="post">
+                    <label for="email-field" autofocus required>Email</label>
+                    <input type="email" name="entry.1.single" id="email-field" value="" placeholder="Enter your email...">
+                    <label>
+                        <input name="entry.0.group" type="radio" value="Don't like">
+                        I don't like what it is now at all
+                    </label>
+                    <label>
+                        <input name="entry.0.group" type="radio" value="It's ok">
+                        I'm not totally pleased with what it is now
+                    </label>
+                    <label>
+                    	<input name="entry.0.group" type="radio" value="Don't know">
+                        I don't use this yet so I'm not aware of the current state.
+                    </label>
+                    <input type="submit" id="form-submit" value="Submit">
+                    <div style="clear: both"></div>
+                </form>
+            </div>
+            
+            <video width="442" height="337" controls="" preload="" id="video" tabindex="0" poster="https://s3.amazonaws.com/spudbudmediabucket/63hop.png">
+            	<source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="https://s3.amazonaws.com/spudbudmediabucket/OnlyIfYaWantIt.webm"></source>
+            </video>
+        </div>
     </div>
 
-    <p>main project text</p>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	
+	<script>
+    $(document).ready( function() {
+		
+		// Grab the background image and add it to the body tag
+		$('body').css('background-image', 'url("https://s3.amazonaws.com/spudbudmediabucket/market.jpg")');
+		
+		// HTML5 aufocus with jQuery backup
+		if (!("autofocus" in document.createElement("input"))) {
+			$('#email-field').focus();
+		}
+		
+		// Slide open/close the form
+		var formState = $('#launch-form').css('display');
+		$('#form-open').click( function () {
+			if (formState == 'none') {
+				$('#launch-form').slideDown();
+				$(this).slideUp();
+				formState = 'block';
+			}
+		})
+		
+		$('#form-submit').click( function() {
+			
+			var emailAddy = $("#email-field").val();
+			var quickQ = $("input:radio").val();
+			
+			return validateForm(emailAddy);
+			
+		});
+		
+		
+		
+	});
+	
+	function validateForm (emailaddressVal) {
+		var hasError = false;
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	
+		if(emailaddressVal == '') {
+			alert('Please enter your email address.');
+			hasError = true;
+		}
+	
+		else if(!emailReg.test(emailaddressVal)) {
+			alert('Please enter a valid email address.');
+			hasError = true;
+		}
+	
+		if(hasError == true) { 
+			$('#email-field').css({
+					'border': '2px red solid',
+					'width' : '396px'
+			})
+			return false; 
+		}
+	}
 
-	<body class="ss-base-body" dir="ltr"> 
-	<div class="ss-form-container"><div class="ss-form-heading"><h1 class="ss-form-title">Lean Startup Me</h1> 
-	<p></p> 
-	<div class="ss-form-desc ss-no-ignore-whitespace">here is the lean starup info</div> 
-	<p></p> 
 
-	<hr class="ss-email-break" style="display:none;"> 
-	</div> 
-	<div class="ss-form"><form action="https://spreadsheets.google.com/a/holoholohey.com/spreadsheet/formResponse?formkey=dFVRYlRlbHFiN3ZOTVVlTTVOVEtZNnc6MQ&amp;theme=0AX42CRMsmRFbUy1iOGYwN2U2Mi1hNWU0LTRlNjEtYWMyOC1lZmU4ODg1ODc1ODI&amp;embedded=true&amp;ifq" method="POST" id="ss-form"> 
-
-	<br> 
-	<div class="errorbox-good"> 
-	<div class="ss-item  ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">do you want my app to
-	</label> 
-	<label class="ss-q-help" for="entry_0"></label> 
-	<ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.0.group" value="help me launch my idea" class="ss-q-radio" id="group_0_1"> 
-	help me launch my idea</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.0.group" value="help me see if anyone likes my idea" class="ss-q-radio" id="group_0_2"> 
-	help me see if anyone likes my idea</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.0.group" value="give me a simple placeholder for my idea" class="ss-q-radio" id="group_0_3"> 
-	give me a simple placeholder for my idea</label></li> 
-	</ul></div></div></div> 
-	<br> <div class="errorbox-good"> 
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_1">give me your email
-	</label> 
-	<label class="ss-q-help" for="entry_1"></label> 
-	<input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1"></div></div></div> 
-	<br> 
-	<input type="hidden" name="pageNumber" value="0"> 
-	<input type="hidden" name="backupCache" value=""> 
-
-
-	<div class="ss-item ss-navigate"><div class="ss-form-entry"> 
-	<input type="submit" name="submit" value="Submit"></div></div></form> 
-	</div> 
-	<div class="ss-footer"><div class="ss-attribution"></div> 
-	<div class="ss-legal"><span class="ss-powered-by">Powered by <a href="http://docs.google.com">Google Docs</a></span>
-
-
-
-
-
-
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/e30chris/LeanStartupMe">e30chris/LeanStartupMe</a>
-    </div>
-
-  </div>
-
-  
+    </script>
+    
+	<script>
+		var _gaq=[['_setAccount','UA-123456-7'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
 </body>
 </html>
-
