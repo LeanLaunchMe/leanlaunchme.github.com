@@ -113,13 +113,13 @@
 				
 		#inner {border: 4px solid #333; padding: 15px; background: #111; /* -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -khtml-opacity: 0.8; opacity: .8;  */-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 2px 2px 4px #222;  -moz-box-shadow: 2px 2px 3px #222; box-shadow: 2px 2px 3px #222;}
 		
-		#inner h1 {font-size: 2em;}
-		#inner .description {}
+		#inner h1 {font-size: 4em;}
+		#inner h2 {font-size: 1.25em;}
 					
 		#click-it {clear: both; padding: 10px 0}
 		#form-open {display: block; padding: 10px 0; margin: 0 auto 10px; width: 200px; color: white; text-align: center; overflow: hidden; background: #25BA03; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-weight: bold; font-size: 1.3em; text-decoration: none;}
 						
-		#launch-form {display: none; padding: 16px; background: #222 }
+		form {display: none; padding: 16px; background: #222 }
 		#email-field {display: block; padding: 8px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; width: 400px; border: none; margin: 0 0 4px;}
 		#launch-form span, #launch-form label {display: block; margin: 0 0 4px; font-weight: bold }
 		#form-submit {padding: 10px 0; margin: 0 auto; width: 200px; color: white; text-align: center; overflow: hidden; background: #25BA03; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-weight: bold; font-size: 1.3em; border: none; float: right}
@@ -172,30 +172,34 @@
     <div id="rapper">
 	<div id="inner">
 		<h1>Lean Launch!</h1>
-                
-		<p id="description">here is a simple to fork and edit Lean Launch page for your idea.  using lean you can find out if anyone likes your genious idea before you spend all that time building and launching it.  ask them simple questions and ask for thier email in a google form that pushes to a spreadsheet.  once you have enough excited users you can build it, launch it, and then reap massive VC funding!!</p>
+		<h2>have a great idea to make the web better?<br>dont waste time building it yet.<br>find out if anyone besides you loves your idea first!!<br>fork it - Lean Launch It!!</h2>                
 
 	<div id="click-it">
             	<a href="#open" id="form-open">Get Started &raquo;</a>
-                <form id="launch-form" action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFo0TDV1b3JxZTFzU05UWGhxQ1dGTlE6MQ" enctype="multipart/form-data" method="post">
-                    <label for="email-field" autofocus required>Email</label>
-                    <input type="email" name="entry.1.single" id="email-field" value="" placeholder="Enter your email...">
-                    <label>
-                        <input name="entry.0.group" type="radio" value="Don't like">
-                        I don't like what it is now at all
-                    </label>
-                    <label>
-                        <input name="entry.0.group" type="radio" value="It's ok">
-                        I'm not totally pleased with what it is now
-                    </label>
-                    <label>
-                    	<input name="entry.0.group" type="radio" value="Don't know">
-                        I don't use this yet so I'm not aware of the current state.
-                    </label>
-                    <input type="submit" id="form-submit" value="Submit">
-                    <div style="clear: both"></div>
-                </form>
-            </div>
+                <form action="https://spreadsheets.google.com/a/holoholohey.com/spreadsheet/formResponse?hl=en_US&amp;formkey=dFo0TDV1b3JxZTFzU05UWGhxQ1dGTlE6MQ&amp;ifq" method="POST" id="ss-form"> 
+ 
+<br> 
+<div class="errorbox-good"> 
+<div class="ss-item  ss-checkbox"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">i want to lean launch because
+</label> 
+<label class="ss-q-help" for="entry_0"></label> 
+<ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.0.group" value="my code going to /dev/null is dumb" class="ss-q-checkbox" id="group_0_1"> 
+my code going to /dev/null is dumb</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.0.group" value="i cant afford all the mountain dew to build it yet" class="ss-q-checkbox" id="group_0_2"> 
+i cant afford all the mountain dew to build it yet</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.0.group" value="i overly self confident about my ideas" class="ss-q-checkbox" id="group_0_3"> 
+i overly self confident about my ideas</label></li> 
+</ul></div></div></div> 
+<br> <div class="errorbox-good"> 
+<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_1">give us your email so we can update you when we are in beta
+</label> 
+<label class="ss-q-help" for="entry_1"></label> 
+<input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1"></div></div></div> 
+<br> 
+<input type="hidden" name="pageNumber" value="0"> 
+<input type="hidden" name="backupCache" value=""> 
+ 
+ 
+<div class="ss-item ss-navigate"><div class="ss-form-entry"> 
+<input type="submit" name="submit" value="Submit"></div></div></form>             </div>
             
             <video width="442" height="337" controls="" preload="" id="video" tabindex="0" poster="https://s3.amazonaws.com/spudbudmediabucket/63hop.png">
             	<source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="https://s3.amazonaws.com/spudbudmediabucket/OnlyIfYaWantIt.webm"></source>
@@ -217,10 +221,10 @@
 		}
 		
 		// Slide open/close the form
-		var formState = $('#launch-form').css('display');
+		var formState = $('form').css('display');
 		$('#form-open').click( function () {
 			if (formState == 'none') {
-				$('#launch-form').slideDown();
+				$('form').slideDown();
 				$(this).slideUp();
 				formState = 'block';
 			}
